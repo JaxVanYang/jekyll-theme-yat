@@ -142,11 +142,11 @@ html[data-theme="dark"]  {
     }
   }
 
-  .post .post-content {
-    img:not([raw]) {
-      background-color: #ffffff33;
-    }
-  }
+  // .post .post-content {
+  //   img:not([raw]) {
+  //     background-color: #ffffff33;
+  //   }
+  // }
 
   .post-related {
     & > *:first-child {
