@@ -8,6 +8,14 @@
       <i class="fa fa-calendar"></i> {{ page.date | date: date_format }}
     </time>
 
+    {%- if page.modified_date -%}
+      ~ 
+      {%- assign mdate = page.modified_date | date_to_xmlschema -%}
+      <time class="dt-modified" datetime="{{ mdate }}" itemprop="dateModified">
+      <i class="fa fa-calendar"></i> {{ page.date | date: date_format }} {{ mdate | date: date_format }}
+      </time>
+    {%- endif -%}
+
     {% assign article = page.content %}
     {% assign lang = page.lang %}
     {%- include functions.html func='get_reading_time' -%}
