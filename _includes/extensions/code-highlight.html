@@ -1,9 +1,7 @@
-<link rel="stylesheet"
-      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/github-dark.min.css">
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/styles/github-dark.min.css" integrity="sha512-rO+olRTkcf304DQBxSWxln8JXCzTHlKnIdnMUwYvQa9/Jd4cQaNkItIUj6Z4nvW1dqK0SKXLbn9h4KwZTNtAyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/highlight.min.js" integrity="sha512-BNc7saQYlxCL10lykUYhFBcnzdKMnjx5fp5s5wPucDyZ7rKNwCoqJh1GwEAIhuePEK4WM9askJBRsu7ma0Rzvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <!-- and it's easy to individually load additional languages -->
-<script charset="UTF-8"
-        src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/languages/go.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/languages/go.min.js" integrity="sha512-5FrrCMl+OdDp4V0/+Og+q950cGMbPLR0D9o3rE0d9e7VYfGkci4zIrwqTXQOvv5Oo4ZhMaZGwZHXH2uKxfe+iw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 {%- assign name = 'code_badge.enabled' -%}
 {%- include functions.html func='get_value' default='true' -%}
@@ -58,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
   function handle(block) {
     addLangData(block);
     addBadge(block)
-    hljs.highlightBlock(block);
+    hljs.highlightElement(block);
   }
 
   for (var i = 0; i < els.length; i++) {
