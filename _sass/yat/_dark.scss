@@ -27,8 +27,8 @@ html[data-theme="dark"]  {
   }
 
   *:not(pre) > code {
-    color: $dark-text-color;
-    background-color: #454545;
+    color: $inline-code-color;
+    background-color: rgba(135,131,120,0.15);
   }
 
   blockquote {
